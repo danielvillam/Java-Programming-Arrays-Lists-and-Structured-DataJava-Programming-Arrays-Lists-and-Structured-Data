@@ -61,6 +61,16 @@ public class CharactersInPlay
         charactersWithNumParts(10,15);
     }
     
+    public void testQuiz (){
+        findAllCharacters();
+        
+        //6 y 7
+        charactersWithNumParts(50,1000);
+        
+        //8
+        charactersWithNumParts(10,15);
+    }
+    
     public void charactersWithNumParts (int num1, int num2){
         for(int k=0; k < myFreqs.size(); k++){
             if(myFreqs.get(k) >= num1 && myFreqs.get(k) <= num2){

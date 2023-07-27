@@ -38,10 +38,21 @@ public class WordFrequencies
         findUnique();
         System.out.println("# unique words: "+myWords.size());
         
-         for(int k=0; k < myFreqs.size(); k++){
-            System.out.println("Word/freq: "+myWords.get(k)+" "+myFreqs.get(k));
-        }
+        //for(int k=0; k < myFreqs.size(); k++){
+          //  System.out.println("Word/freq: "+myWords.get(k)+" "+myFreqs.get(k));
+        //}
         
+        int index = findIndexOfMax();
+        System.out.println("max word/freq: "+myWords.get(index)+" "+myFreqs.get(index));
+    }
+    
+    public void testQuiz (){
+        findUnique();
+        
+        //3
+        System.out.println("# unique words: "+myWords.size());
+        
+        //4 y 5
         int index = findIndexOfMax();
         System.out.println("max word/freq: "+myWords.get(index)+" "+myFreqs.get(index));
     }
